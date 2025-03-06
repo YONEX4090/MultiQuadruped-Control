@@ -1,0 +1,9 @@
+When deploying the code, two modifications need to be made based on the actual setup:
+
+    Line 62: The model path should be adjusted according to the actual location.
+    Line 72: The trained policy should be modified based on its actual location.
+
+In my code, the model is placed in /localhost, and a JSZR folder is created inside the Robots directory to store the model.
+Similarly, the .pt file follows the same approach.
+
+After deployment, you can replace the policy in the Isaac Sim quadruped robot example to evaluate its performance.
