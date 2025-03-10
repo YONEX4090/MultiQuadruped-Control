@@ -7,18 +7,16 @@ The proposed planner has been evaluated in [NVIDIA Isaac_Sim](https://developer.
 
 ### Running the code
 
-# Running the Code
-
-## 1. Copy the Python Files  
-1. Open **Home** and enable hidden folders (if not already visible).  
-2. Navigate to:  
+1. Copy the Python Files  
+2. Open **Home** and enable hidden folders (if not already visible).  
+3. Navigate to:  
 ```bash
 Home/.local/share/ov/pkg/isaac-sim-4.20/extension_example
 ```
 
-3. Locate and open **user_examples**.  
-4. Copy and paste the Python files from **Legged_Robots** into this directory.  
-5. For the **Camera** project, follow the same path and replace the **hello_world** files with the corresponding Python files.  
+4. Locate and open **user_examples**.  
+5. Copy and paste the Python files from **Legged_Robots** into this directory.  
+6. For the **Camera** project, follow the same path and replace the **hello_world** files with the corresponding Python files.  
 
 ### Launch in Isaac Sim  
 1. Start **Isaac Sim**.  
