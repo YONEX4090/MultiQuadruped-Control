@@ -15,14 +15,14 @@ Home/.local/share/ov/pkg/isaac-sim-4.20/extension_example
 ```
 
 4. Locate and open **user_examples**.  
-5. Copy and paste the Python files from **Legged_Robots** into this directory.  
-6. For the **Camera** project, follow the same path and replace the **hello_world** files with the corresponding Python files.  
+5. Copy and paste model file the Python files (__init__.py, Legged_Robot.py, Legged_Robot_extension.py) from **Isaacsim** into this directory.  
 
 ### Launch in Isaac Sim  
 1. Start **Isaac Sim**.  
 2. In the top-left menu, go to **Isaac Examples**.  
 3. Select **Legged Robot**, then click **Load**.  
-4. For the **Camera** project, select **hello_world**, then click **Load**.  
+
+### train.py : The Python code for online training.
 
 ---
 
