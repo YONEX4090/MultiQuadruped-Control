@@ -1,12 +1,12 @@
 
-# Distributed Safe Learning Control -- Policy Training
+# Safe Distributed Learning-Enhanced Predictive Control for Multiple Quadrupedal Robots -- Policy training
 
 ### Introduction
 
-For this project, you will run the codes in the Matlab environment. The codes verify the convergence condition of actor-critic learning and the closed-stability condition under actor-critic learning in the receding horizon control framework.
+For this project, you will run the codes in the MATLAB environment. The codes verify the convergence condition of our algorithm and the closed-loop stability condition for quadruped robot navigation, ensuring obstacle avoidance and formation stability.
 
 ### Running the code
 
-- Run `DSLC_two_robots_verification` to verify the convergence condition and the stability condition in the no-obstacle scenario.
-- Run `DSLC_two_robots_verification_obstacle` to verify the convergence condition in the obstacle avoidance scenario.
+- Run `main` to verify the safe navigation in obstacle dense environment.
+- Run `MPC_CLF_CBF` to verify the convergence condition in the obstacle avoidance scenario.
 
