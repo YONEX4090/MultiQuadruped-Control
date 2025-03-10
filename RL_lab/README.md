@@ -13,7 +13,7 @@
 **RL_lab** is an extension project based on Isaac Lab. It allows you to develop in an isolated environment, outside of the core Isaac Lab repository.
 
 <div align="center">
-  <img src="../assets/Fig5_v2.pdf" width="50%"/>
+  <img src="../assets/Fig5_v2.pdf" width="75%"/>
 </div>
 
 ## Installation
