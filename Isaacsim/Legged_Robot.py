@@ -23,7 +23,6 @@ cbf_model_path = "models/cbf_model.pt"
 cbf_model = torch.load(cbf_model_path)
 cbf_model.eval()
 
-# Define IPOPT-based MPC-CLF solver
 class MPC_CLF_Solver:
     def __init__(self, horizon=10, dt=0.1):
         self.horizon = horizon
@@ -31,16 +30,16 @@ class MPC_CLF_Solver:
         self._setup_solver()
     
     def _setup_solver(self):
-        x = SX.sym('x', 4)  # State: [px, py, vx, vy]
-        u = SX.sym('u', 2)  # Control input: [ax, ay]
+        x = SX.sym('x', 4)  
+        u = SX.sym('u', 2)  
         x_next = x + vertcat(x[2], x[3], u[0], u[1]) * self.dt
         
-        cost = x_next[:2].T @ x_next[:2]  # Quadratic cost function for tracking
+        cost = x_next[:2].T @ x_next[:2]  
         nlp = {'x': u, 'f': cost, 'g': x_next}
         self.solver = nlpsol('solver', 'ipopt', nlp, {'ipopt.print_level': 0, 'print_time': 0})
     
     def solve(self, state, desired_state):
-        lbx = np.array([-1.0, -1.0])  # Control limits
+        lbx = np.array([-1.0, -1.0])  
         ubx = np.array([1.0, 1.0])
         sol = self.solver(x0=np.zeros(2), lbx=lbx, ubx=ubx, lbg=-np.inf, ubg=np.inf)
         return sol['x'].full().flatten()
@@ -49,7 +48,7 @@ mpc_clf_solver = MPC_CLF_Solver()
 
 def pooled_observation(neighbors):
     if len(neighbors) == 0:
-        return np.zeros(4)  # Return a neutral observation if no neighbors exist
+        return np.zeros(4)  
     neighbors_tensor = torch.tensor(neighbors, dtype=torch.float32)
     pooled = torch.max(neighbors_tensor, dim=0)[0].numpy()
     return pooled
@@ -91,11 +90,9 @@ class DistributedMPCController():
             desired_position = leader_position + self.formation_offset[i]
             follower_position, _ = follower.DOG.robot.get_world_pose()
 
-            # Compute base control command using MPC-CLF
             command = compute_mpc_clf_control(follower_position, desired_position)
             clf_cost = np.linalg.norm(command)
 
-            # Apply CBF-based correction with pooled observations
             state = np.array(follower_position[:2])
             neighbors = [leader_position[:2]] + [r.DOG.robot.get_world_pose()[0][:2] for r in self.follower_robots if r != follower]
             cbf_correction = compute_cbf_correction(state, np.array(neighbors))
@@ -128,9 +125,6 @@ class FormationController():
         self.formation_offset = formation_offset  # List of offsets for each follower robot
 
     def update_commands(self, leader_position, leader_target):
-        """
-        Computes movement commands for the leader and follower robots.
-        """
         position_error = leader_target - leader_position
         leader_speed = np.clip(0.5 * position_error[:2], -1.0, 1.0)  # Limit max speed
         leader_yaw = math.atan2(position_error[1], position_error[0])  # Compute target direction
