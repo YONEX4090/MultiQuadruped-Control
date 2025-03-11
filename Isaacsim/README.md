@@ -5,7 +5,7 @@
 
 The proposed planner has been evaluated in [NVIDIA Isaac_Sim](https://developer.nvidia.com/isaac/sim) and tested on our designed quadrupedal robot, XG, using a pre-trained RL locomotion policy from the Orbit Framework. A detailed guide on training and deploying the pre-trained RL locomotion policy, along with the USD file of our quadrupedal robot, is provided in an external document. Our hierarchical control architecture is implemented and trained within this simulated environment. We selected the NVIDIA warehouse environment (approximately 25 × 35m), where cuboid obstacles create narrow corridors. Our experiments focus on formation maintenance, collision avoidance, and deadlock resolution in these challenging scenarios.
 <div align="center">
-  <img src="../assets/fig5.png" width="50%"/>
+  <img src="../assets/fig5.png" width="75%"/>
 </div>
 
 ### Running the code
