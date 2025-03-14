@@ -17,8 +17,7 @@ This module verifies the **convergence condition** of our algorithm and ensures 
 The implementation is done in **Matlab**.
 
 ### IsaacSim (Python)
-The operating system we use is **Ubuntu 22.04**. 
-This module deploys the **control policy** to manage multiple quadruped robots in **IsaacSim 4.20**. It is based on our **XG quadrupedal robot platform** and includes materials related to the **XTDrone project**.
+We use **Ubuntu 22.04** and deploy the **control policy** within **IsaacSim 4.20** to manage multiple quadruped robots based on our **XG quadrupedal robot platform**.
 
 The implementation is done in **Python**.
 
