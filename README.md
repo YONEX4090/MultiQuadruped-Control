@@ -35,4 +35,6 @@ To set up the IsaacSim environment, please follow the official installation guid
 
 ### Video
 
-https://github.com/YONEX4090/MultiQuadruped-Control/blob/main/assets/video.mp4
+
+[![Watch the video](assets/Fig4.png)](https://github.com/YONEX4090/MultiQuadruped-Control/blob/main/assets/video.mp4)
+
