@@ -31,3 +31,8 @@ No additional dependencies are required. Ensure you have a compatible version of
 ### IsaacSim (Python)
 To set up the IsaacSim environment, please follow the official installation guide:
 [IsaacSim Installation](https://docs.omniverse.nvidia.com/isaacsim/latest/overview.html).
+
+
+### Video
+
+<video src="assets/video.mp4" controls="controls" width="600"></video>
