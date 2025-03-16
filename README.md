@@ -34,5 +34,6 @@ To set up the IsaacSim environment, please follow the official installation guid
 
 
 ### Video
-
+<div align="center">
 <video src="assets/video.mp4" controls="controls" width="600"></video>
+</div>
