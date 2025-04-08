@@ -11,6 +11,8 @@ For this project, you will run the codes in the MATLAB environment. The codes ve
 
 ### Running the code
 
-- Run `main` to verify the safe navigation in obstacle dense environment.
-- Run `MPC_CLF_CBF` to verify the convergence condition in the obstacle avoidance scenario.
-
+- Run `main`: Verify safe navigation in obstacle-dense environments.
+- Run `MPC_CLF_CBF`: Validate convergence conditions during obstacle avoidance scenarios.
+- Run `comparison_with_NN_formation_control`: Compare nonlinear solver-based Distributed Model Predictive Control (DMPC) with our method for multi-robot coordination in leader-follower formations with obstacle avoidance.
+- Run `DMPC_formation_control_curved`: Simulate three-robot formation maintenance following a curved virtual leader trajectory while avoiding obstacles using Control Barrier Functions (CBFs) for safety.
+- Run `DMPC_formation_control_straight`: Simulate three-robot formation maintenance following a straight virtual leader trajectory while avoiding obstacles using Control Barrier Functions (CBFs) for safety.
