@@ -6,8 +6,8 @@ from __future__ import annotations
 import torch
 import torch.nn as nn
 
-from robot_lab.third_party.rsl_rl.modules.actor_critic import ActorCritic, get_activation
-from robot_lab.third_party.rsl_rl.utils import unpad_trajectories
+from RL_lab.third_party.rsl_rl.modules.actor_critic import ActorCritic, get_activation
+from RL_lab.third_party.rsl_rl.utils import unpad_trajectories
 
 
 class ActorCriticRecurrent(ActorCritic):

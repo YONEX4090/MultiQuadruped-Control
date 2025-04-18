@@ -12,13 +12,9 @@
 
 **RL_lab** is an extension project based on Isaac Lab. It allows you to develop in an isolated environment, outside of the core Isaac Lab repository.
 
-<div align="center">
-  <img src="../assets/Fig5_v2.png" width="75%"/>
-</div>
-
 ## Installation
 
-- Install Isaac Lab by following the [installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html). We recommend using the conda installation as it simplifies calling Python scripts from the terminal.
+- Install Isaac Lab by following the [installation guide](https://isaac-sim.github.io/IsaacLab/source/setup/installation/index.html). We recommend using the conda installation as it simplifies calling Python scripts from the terminal.
 
 - Clone the repository separately from the Isaac Lab installation (i.e. outside the `IsaacLab` directory):
 

@@ -7,8 +7,8 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-from robot_lab.third_party.rsl_rl.modules import ActorCritic
-from robot_lab.third_party.rsl_rl.storage import RolloutStorage
+from RL_lab.third_party.rsl_rl.modules import ActorCritic
+from RL_lab.third_party.rsl_rl.storage import RolloutStorage
 
 
 class PPO:

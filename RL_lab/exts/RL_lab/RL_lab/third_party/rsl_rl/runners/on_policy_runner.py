@@ -10,11 +10,11 @@ import torch
 from collections import deque
 from torch.utils.tensorboard import SummaryWriter as TensorboardSummaryWriter
 
-import robot_lab.third_party.rsl_rl as rsl_rl
-from robot_lab.third_party.rsl_rl.algorithms import PPO
-from robot_lab.third_party.rsl_rl.env import VecEnv
-from robot_lab.third_party.rsl_rl.modules import ActorCritic, ActorCriticRecurrent, EmpiricalNormalization
-from robot_lab.third_party.rsl_rl.utils import store_code_state
+import RL_lab.third_party.rsl_rl as rsl_rl
+from RL_lab.third_party.rsl_rl.algorithms import PPO
+from RL_lab.third_party.rsl_rl.env import VecEnv
+from RL_lab.third_party.rsl_rl.modules import ActorCritic, ActorCriticRecurrent, EmpiricalNormalization
+from RL_lab.third_party.rsl_rl.utils import store_code_state
 
 
 class OnPolicyRunner:

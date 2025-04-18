@@ -11,7 +11,7 @@ import omni.isaac.lab.sim as sim_utils
 from omni.isaac.lab.actuators import ImplicitActuatorCfg
 from omni.isaac.lab.assets.articulation import ArticulationCfg
 
-from Rl_lab.assets import ISAACLAB_ASSETS_DATA_DIR
+from RL_lab.assets import ISAACLAB_ASSETS_DATA_DIR
 
 ##
 # Configuration

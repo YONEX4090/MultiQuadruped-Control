@@ -19,13 +19,13 @@ from omni.isaac.lab.utils.noise import AdditiveUniformNoiseCfg as Unoise
 # import omni.isaac.lab_tasks.manager_based.locomotion.velocity.config.DOG.mdp as DOG_mdp
 import omni.isaac.lab_tasks.manager_based.locomotion.velocity.mdp as mdp
 from omni.isaac.lab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
-import robot_lab.tasks.locomotion.velocity.config.DOG.mdp as DOG_mdp
+import RL_lab.tasks.locomotion.velocity.config.DOG.mdp as DOG_mdp
 ##
 # Pre-defined configs
 ##
 # from omni.isaac.lab_assets.DOG import DOG_CFG  # isort: skip
 # from omni.isaac.lab_assets.Dog import DOG_CFG
-from robot_lab.assets.Dog import DOG_CFG
+from RL_lab.assets.Dog import DOG_CFG
 
 
 COBBLESTONE_ROAD_CFG = terrain_gen.TerrainGeneratorCfg(

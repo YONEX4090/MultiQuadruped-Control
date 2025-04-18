@@ -1,9 +1,8 @@
-When deploying the code, two modifications need to be made based on the actual setup:
+部署代码需要根据情况修改两处：
+line 62 模型位置需要根据实际情况修改
+line 72 训练好的策略根据实际位置进行修改
 
-    Line 62: The model path should be adjusted according to the actual location.
-    Line 72: The trained policy should be modified based on its actual location.
+我代码里是把模型放在/localhost中，在Robots里面创建了JSZR文件夹放入模型。
+pt文件类似。
+部署完后可以替换isaacsim例子中四足机器人的策略进行查看性能。
 
-In my code, the model is placed in /localhost, and a JSZR folder is created inside the Robots directory to store the model.
-Similarly, the .pt file follows the same approach.
-
-After deployment, you can replace the policy in the Isaac Sim quadruped robot example to evaluate its performance.
