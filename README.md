@@ -33,9 +33,11 @@ To set up the IsaacSim environment, please follow the official installation guid
 [IsaacSim Installation](https://docs.omniverse.nvidia.com/isaacsim/latest/overview.html).
 
 
+<!--
 ### Video
 
-%https://github.com/user-attachments/assets/9af092cd-cdb0-429f-9c26-e7cfde45a7f5
+https://github.com/user-attachments/assets/9af092cd-cdb0-429f-9c26-e7cfde45a7f5
+-->
 
 
 
